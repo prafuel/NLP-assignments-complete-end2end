@@ -25,20 +25,20 @@ if __name__ == "__main__":
     print(f"File path : {file_path}")
 
     start = time.time()
-    # df = (
-    #     DataReader().get_data(file_path)
-    #     .assign(
-    #         crawled_data=lambda df_: df_.URL.apply(data_crawling_fn)
-    #     )
-    #     .pipe(data_formatting_fn)
-    # )
+    df = (
+        DataReader().get_data(file_path)
+        .assign(
+            crawled_data=lambda df_: df_.URL.apply(data_crawling_fn)
+        )
+        .pipe(data_formatting_fn)
+    )
 
 
     # not reccomanded
-    df = pd.read_csv("./notebooks/extracted_data.csv")
-    df = (
-        df.pipe(data_formatting_fn)
-    )
+    # df = pd.read_csv("./notebooks/extracted_data.csv")
+    # df = (
+    #     df.pipe(data_formatting_fn)
+    # )
 
     end = time.time() - start
     print("time taken", end)
