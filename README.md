@@ -40,7 +40,7 @@ The input file `Input.xlsx` should contain the following columns:
 | AVG WORD LENGTH       | Average length of words                  |
 
 ### Sample Input Screenshot
-![Input Screenshot](./screenshots/input.png)
+![Input Screenshot](./screenshots/input_file.png)
 
 ---
 
