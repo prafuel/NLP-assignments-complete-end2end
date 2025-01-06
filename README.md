@@ -5,6 +5,8 @@ This repository provides a comprehensive solution to NLP assignments focusing on
 
 ---
 
+More info about this assignment checkout "./Objective.docx"
+
 ## How to Run the Assignment
 
 1. Ensure you have Python 3 installed on your system.
