@@ -27,6 +27,26 @@ The input file `Input.xlsx` should contain the following columns:
 |-----------------------|-------------------------------------------|
 | URL_ID                | Unique ID for each URL                   |
 | URL                   | The URL to extract data from             |
+
+### Sample Input Screenshot
+![Input Screenshot](./screenshots/input_file.png)
+
+---
+
+## Output Data
+
+The output will include the processed results saved in an Excel file. Metrics calculated include:
+
+1. Sentiment Analysis: Positive, Negative, Polarity, and Subjectivity scores.
+2. Readability Metrics: Average Sentence Length, Percentage of Complex Words, FOG Index, and others.
+3. Word Statistics: Word Count, Syllables per Word, and Average Word Length.
+4. Basically perform feature engineering from data which can be extracted from given URL
+
+### Expected Output
+| Column Name           | Description                               |
+|-----------------------|-------------------------------------------|
+| URL_ID                | Unique ID for each URL                   |
+| URL                   | The URL to extract data from             |
 | POSITIVE SCORE        | Score for positive sentiment             |
 | NEGATIVE SCORE        | Score for negative sentiment             |
 | POLARITY SCORE        | Overall polarity score                   |
@@ -41,24 +61,6 @@ The input file `Input.xlsx` should contain the following columns:
 | PERSONAL PRONOUNS     | Count of personal pronouns               |
 | AVG WORD LENGTH       | Average length of words                  |
 
-### Sample Input Screenshot
-![Input Screenshot](./screenshots/input_file.png)
-
----
-
-## Output Data
-
-The output will include the processed results saved in an Excel file. Metrics calculated include:
-
-1. Sentiment Analysis: Positive, Negative, Polarity, and Subjectivity scores.
-2. Readability Metrics: Average Sentence Length, Percentage of Complex Words, FOG Index, and others.
-3. Word Statistics: Word Count, Syllables per Word, and Average Word Length.
-
-### Expected Output Screenshot
-![Expected Output Screenshot](./screenshots/before.png)
-
-### Current Output Screenshot
-![Current Output Screenshot](./screenshots/after.png)
 
 ---
 
